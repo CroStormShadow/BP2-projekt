@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel = "stylesheet" type = "text/css" href = "izgled.css">
+	<title>Teretana</title>
+</head>
+<body>
+	<div id="kartica_unos">
+		<form style="float:left;" action="/ulazak.php" method ="POST">
+			<input id = "kartica_txtbox" name = "id" autofocus type="text" value="Broj kartice" onfocus="value = '';" onfocusout="value = 'Broj kartice'">
+		</form>
+	</div>
+	<span style = "float:right;"> Uobičajeni način rada </span><br>
+	<label class="switch">
+	<input class="switch-input" type="checkbox" checked onclick="toggleUnos()"/>
+	<span class="switch-label" data-on="On" data-off="Off"></span> 
+	<span class="switch-handle"></span> 
+	</label>
+		
+
+	<div id = "blok">
+		<button type="button" onclick="location.href='http://localhost/ispis_svih.php'"><img src = "slike/pregled_ikona.png" style ="height: 70px; width: 100px; padding: 15px 0px 15px;"><br>Pregledaj sve</buton>
+		<button type="button" onclick="location.href='http://localhost/unos_novog.html'"> <img src = "slike/novi_ikona.png" style ="height: 100px; width: 100px;"><br>Novi korisnik</button>
+		<button type="button" onclick="location.href='http://localhost/obnova.php'"> <img src = "slike/obnovi.png" style ="height: 100px; width: 100px;"><br>Obnovi članarinu</button>
+		<button type="button" onclick="location.href='http://localhost/termin.php'"> <img src = "slike/termin.png" style ="height: 100px; width: 100px;"><br> Svi termini</button>
+		<button type="button" onclick="location.href='http://localhost/novi_termin.php'"> <img src = "slike/novi_termin.png" style ="height: 100px; width: 100px;"><br> Dodaj termin</button>
+	</div>
+	
+<script src="toggle.js"></script>
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<img onclick="location.href='index.html'" src="slike/home.png" style ="height: 50px; width: 50px; margin-bottom: 5em;">
+<link rel = "stylesheet" type = "text/css" href = "novi_user.css">
+<meta charset="UTF-8">
+<div id="blok">
+		<form action="/unos_novog_korisnika.php" method ="POST">
+			<div class = "textbox">
+			Ime: <br>	
+			<input type = "text" name = "ime"><br>
+			</div>
+			<div class = "textbox">
+			Prezime:<br>
+			<input type="text" name="prezime">
+			</div>
+			<div class = "textbox">
+			Dob: <br>
+			<input type = "text" name = "dob"><br>
+			</div>
+			<div class = "textbox">
+			Datum učlanenja: <br>
+			<input type = "text" value="YYYY-MM-DD" onclick="value=''" name = "datum_uclanivanja"><br>
+			</div>
+			<input type = "checkbox" name="dolasci" value = "Dolasci?" style = "height:1.5em; width:1.5em; vertical-align:middle;" data-on = "12" data-off = "1000"> Dolasci? <br>
+			<input type = "submit" value = "Submit" id  = "submit">
+		</form>
+	</div>
+
